@@ -1,0 +1,47 @@
+<hr>
+
+<h2>Please complete the following form:</h2>
+
+<h4>Your address:</h4>
+<div class="form-group">
+    <input [(ngModel)]= "newOrder.address" placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search>
+  </div>
+<agm-map 
+[latitude]="lat" [longitude]="lng" [zoom]="zoom">
+<agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+
+<br>
+
+<h4>How many rooms do you want us to clean?</h4>
+<form #myForm="ngForm" (ngSubmit)="saveOrder(myForm)">
+
+  <select name="rooms" ngModel [(ngModel)]="newOrder.rooms">
+      <option value="1">1 room</option>
+      <option value="2">2 rooms</option>
+      <option value="3">3 rooms</option>
+      <option value="4">4 rooms</option> 
+    </select>
+  
+<br>
+<br>
+<select ngModel name="services" [(ngModel)]="newOrder.services">
+
+    <option value="cleaning">Cleaning</option>
+    <option value="ironing">Ironing</option>
+    <option value="cooking">Cooking</option>
+    <option value="pets">Pets</option>
+
+  </select>
+  <br>
+
+  <!-- aqui va la hora input -->
+
+
+  <input ngModel name="date" [(ngModel)]="newOrder.date" id="date" type="date"> 
+  <input [(ngModel)]="newOrder.hour" type="time" name="hour" id="hour">
+
+
+  <input type="submit">
+
+</form>

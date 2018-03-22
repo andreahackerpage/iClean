@@ -1,0 +1,18 @@
+<p>Join as a cleaner</p>
+
+<form>
+    <div class="form-group">
+     
+      <input placeholder="First Name" type="text" [(ngModel)]="newCleaner.name" name="name" >
+      
+      <input placeholder="Last Name" type="text" [(ngModel)]="newCleaner.lastname" name="lastname"  >
+    </div>
+    <div class="form-group">
+    
+        <input placeholder="password" type="password" [(ngModel)]="newCleaner.password" name="password">
+
+        <input placeholder="email" type="text" [(ngModel)]="newCleaner.email" name="email">
+    </div>
+    
+    <button (click)="saveCleaner()" >Submit</button>
+  </form>

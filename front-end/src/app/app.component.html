@@ -1,0 +1,43 @@
+
+
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="/home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+    
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="/board" role="tab" aria-controls="nav-profile" aria-selected="false">Services</a>
+    
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/signup" role="tab" aria-controls="nav-contact" aria-selected="false">SignUp</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/login" role="tab" aria-controls="nav-contact" aria-selected="false">Login</a>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
+</div>
+
+
+<router-outlet></router-outlet>
+
+<div class="contactrow">
+    <div class="column phone1">
+        <h4><i class="fa fa-phone"></i><br>
+        Phone Number</h4>
+        <a href="tel:3012745893">(+64) 022642 8158</a>
+    </div>
+
+
+    <div class="column email2">
+        <h4><i class="fa fa-envelope"></i><br>
+        Email Address </h4>
+        <a href="mailto:andreahacker@gmail">andrea@iClean.com</a>
+    </div>
+
+
+    <div class="column hours3">
+        <h4><i class="fa fa-clock-o"></i> <br>
+        Business Hours</h4>
+        Mon - Fri |  9am - 5pm
+    </div>
+</div>

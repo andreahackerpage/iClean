@@ -1,0 +1,32 @@
+
+
+<!-- <div *ngIf="isLogin">
+    <input placeholder="name" type="text" [(ngModel)]="user.name">
+    <input placeholder="email" type="text" [(ngModel)]="user.email">
+    <input placeholder="password" type="password" [(ngModel)]="user.password">
+    <button (click)="login()">Login</button>
+   </div>
+  
+
+   <div id="id01" class="modal"> -->
+  
+      
+      <div *ngIf="isLogin">
+        
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="../../assets/images/github-logo.png" alt="Avatar" class="avatar">
+        </div>
+   <div class="container">
+        <label for="uname"><b>Name</b></label>
+        <input placeholder="name" type="text" [(ngModel)]="user.email">
+
+        <label for="psw"><b>Password</b></label>
+        <input placeholder="password" type="password" [(ngModel)]="user.password">
+
+    
+        <button (click)="login()">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+</div>

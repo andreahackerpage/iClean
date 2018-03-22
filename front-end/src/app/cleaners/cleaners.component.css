@@ -1,0 +1,28 @@
+.rating {
+  color: orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.container{
+  margin: 20px 20px 20px ;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.avatarcleaner{
+  width: 100%;
+  height: 300px;
+  padding:10px;
+}
+
+h5{
+text-align: center;
+  padding:20px;
+}
+p{
+  text-align: center;
+}

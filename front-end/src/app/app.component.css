@@ -1,0 +1,83 @@
+nav{
+background-color: #19555E;
+margin:0;
+height: 100px;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color: #2199A9;
+  
+}
+
+a:hover{
+  color: #fff;
+  transition: all 150ms ease-in-out;
+}
+
+#nav-tab{
+  display:flex;
+  justify-content: space-around; 
+  padding-top: 30px;
+}
+
+.logo{
+  display: flex;
+  align-content: center;
+  height: 300px;
+}
+
+.page-footer{
+  background-color: rgb(59, 172, 192);
+}
+
+
+
+/* CUSTOM FOOTER CONTACT ROW */
+.widget_text.col-full.contact-us-wrapper {
+    max-width: 100%;
+    background-color: #c2aa5c;
+    padding: 20px;
+    text-align: center;
+}
+.site-footer {
+    border-top: none;
+    padding: 0;
+}
+.contactrow {
+    max-width: 80em;
+    margin: auto;
+}
+.contactrow .column {
+   margin: 5px;
+   text-align: center;
+	 display: inline-block;
+	 width: 30%;
+}
+.column, .column a {
+    font-size: 16px;
+    font-weight: 300;
+	color: #f5cb3a!important;
+}
+
+
+.column h4 {
+	color: #2199A9;
+    font-size: 20px;
+	text-transform: uppercase; 
+	letter-spacing: 2px!important;
+}
+
+
+.column h4 .fa {
+	color: #f5cb3a!important;
+    font-size: 30px;
+	background: none!important;
+}
+.contactrow {
+    max-width: 90em;
+    margin: auto;
+}
+/* END CUSTOM FOOTER CONTACT ROW */

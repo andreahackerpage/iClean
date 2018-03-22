@@ -1,0 +1,8 @@
+<div *ngIf="isSignup">
+  <input placeholder="name" type="text" [(ngModel)]="newUser.name">
+  <input placeholder="email" type="text" [(ngModel)]="newUser.email">
+  <input placeholder="password" type="password" [(ngModel)]="newUser.password">
+  <button (click)="signup()">SignUp</button>
+ </div>
+
+ 

@@ -1,0 +1,113 @@
+
+
+.btn{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.2em;
+  height: 50px;
+  width: 150px;
+  border-radius: 120px;
+  border-color: rgb(16, 131, 151);
+  color: #fff;
+  box-shadow: 0 0 40px 40px rgb(20, 153, 170) inset, 0 0 0 0 rgb(15, 135, 184);
+  transition: all 150ms ease-in-out;
+}
+
+.h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2em;
+    color: red;
+   
+  }
+.btn:hover {
+  box-shadow: inset 0 0 0 50px rgba(0, 0, 0, 0.2);
+}
+.logo{
+  position: relative;
+  align-self: center;
+  top: 45px;
+margin-bottom: 45px;;
+
+ 
+}
+
+.house{
+  display: flex;
+  width: 410px;
+  height: 390px;
+  margin-right: 80px;
+  margin-top: 50px;
+  float: right;
+
+}
+.principalbutton{
+  display:flex;
+  position: absolute;
+  float: left;
+  align-items: center;
+  top: 300px;
+  left:530px;
+
+}
+  .section2{
+    height: 420px;
+    background-color: aqua;
+  }
+
+  .section3{
+    width: 100%;
+    background-color: rgb(250, 252, 252);
+  }
+
+  .howi{
+ 
+    width: 100%;
+
+  }
+  .section4{
+    padding-top: 10px;
+    height: 200px;
+    background-color: burlywood;
+  }
+  .section2{
+    background-color: rgba(33, 153, 169, 0.514);
+    color:white;
+  }
+h2{
+  text-align: center;
+   padding-top:50px;
+}
+  p{
+    text-align: justify;  
+    margin: 0px 130px 30px 130px;
+  }
+
+  .heart{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 550px;
+  }
+
+  hr{
+    margin: 0;
+    height: 10px;
+    border: 0;
+  }
+  .rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+  }
+
+
+

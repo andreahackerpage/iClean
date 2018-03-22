@@ -1,0 +1,85 @@
+<div class="container">
+
+  <div class="card" style="width: 18rem;">
+
+    <img class="avatarcleaner" src="https://vg-images.condecdn.net/image/9R4Dn1N3mWV/crop/200/square/f/angelina-2-vogue-31july17-getty.jpg"
+      alt="John" style="width:100%">
+    <h5>Britney Spears</h5>
+
+    <p>
+      <i>“Efficient and cheerful <br> person! 100% recommended”</i>
+    </p>
+
+    <p>Precio: $300 p/h</p>
+    <div class="rating">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+    </div>
+
+
+    <p>
+        {{order.address}} {{order.services}} {{order.rooms}} {{order.hour}} {{order.date}} {{order.price}} {{order.cleaner}}
+
+    </p>
+    <br>
+    <p *ngFor="let cleaner of cleaners">
+      {{cleaners.name}}
+    </p>
+    <button (click)="addCleanerToOrder(cleaners)" [routerLink]="['/payment']">Book</button>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img class="avatarcleaner" src="https://s3.amazonaws.com/tci-assets/uploads/BRANDON_FLOWERS_PASSPORT.png" alt="John" style="width:100%">
+    <h5>Chapulin Colorado</h5>
+
+    <p>
+      <i>“If you want a perfect <br> ironing, this is THE guy!”</i>
+    </p>
+
+    <p>Precio: $250 p/h</p>
+
+    <div class="rating">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+    </div>
+    <p>
+      {{order.address}} {{order.services}} {{order.rooms}} {{order.hour}} {{order.date}} {{order.price}} {{order.cleaner}}
+
+    </p>
+    <br>
+    <p *ngFor="let cleaner of cleaners">
+      {{cleaners.name}}
+    </p>
+    <button (click)="addCleanerToOrder(cleaners)" [routerLink]="['/payment']">Book</button>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img class="avatarcleaner" src="http://storage.chivasdecorazon.com.mx/jugadores/foto_perfil/28.png" alt="John" style="width:100%">
+    <h5>Alan Pulido</h5>
+
+    <p>
+      <i>“The best cleaner in town.<br> Punctual and efficient.”</i>
+    </p>
+
+    <p>Precio: $290 p/h</p>
+
+    <div class="rating">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+    </div>
+
+    <p>
+      {{order.address}} {{order.services}} {{order.rooms}} {{order.hour}} {{order.date}} {{order.price}} {{order.cleaner}}
+
+    </p>
+    <br>
+    <p *ngFor="let cleaner of cleaners">
+      {{cleaners.name}}
+    </p>
+    <button (click)="addCleanerToOrder(cleaners)" [routerLink]="['/payment']">Book</button>
+
+  </div>
+
+</div>
